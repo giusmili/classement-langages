@@ -1,3 +1,9 @@
+<?php 
+
+    include_once __DIR__ .'/controller/baseController.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
