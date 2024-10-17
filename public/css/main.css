@@ -19,7 +19,7 @@ header h1 {
   border-collapse: collapse;
   border: solid 0.1rem #fff;
 }
-.table-primary table thead th,
+.table-primarytable thead th,
 .table-primary table tbody td {
   width: inherit;
   border-collapse: collapse;
