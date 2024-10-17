@@ -33,67 +33,28 @@
                     <th>Utilisation principale</th>
                 </thead>
                 <tbody>
-                    <tr>
+
+                  <!--   <tr>
                         <td>1</td>
                         <td>Python</td>
                         <td>Polyvalent, utilisé en IA, Data Science, développement web et automatisation</td>
                         <td>IA, analyse de données, backend web</td>
-                    </tr>
+                    </tr> -->
+                <?php foreach ($users as $user): ?>
                     <tr>
-                        <td>2</td>
-                        <td>JavaScript</td>
-                        <td>Langage principal du développement web, avec une grande communauté</td>
-                        <td>Développement web front-end et back-end</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Java</td>
-                        <td>Très utilisé pour les applications d'entreprise, Android et le cloud</td>
-                        <td>Développement d'applications, systèmes cloud</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>C#</td>
-                        <td>Langage développé par Microsoft, utilisé pour des applications sur Windows</td>
-                        <td>Développement d'applications desktop, jeux</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>C++</td>
-                        <td>Utilisé dans les systèmes embarqués, moteurs de jeux et applications haute performance</td>
-                        <td>Systèmes embarqués, moteurs de jeux</td>
+                        
+                        <?= 
+                            "<td>".htmlspecialchars($user['id_rang'])."</td>
+                            <td>".htmlspecialchars($user['langage'])."</td>
+                            <td>".htmlspecialchars($user['description'])."</td>
+                            <td>".htmlspecialchars($user['utilisation_principale'])."</td>" 
+                        ?>
+                    
                     </tr>
 
-                    <tr>
-                        <td>6</td>
-                        <td>TypeScript</td>
-                        <td>Superset de JavaScript avec typage statique, très utilisé dans le développement web</td>
-                        <td>Développement web moderne</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Go</td>
-                        <td>Langage créé par Google, conçu pour la performance et la scalabilité</td>
-                        <td>Services backend, cloud computing</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>SQL</td>
-                        <td>Langage de gestion de bases de données</td>
-                        <td>Gestion et interrogation des bases de données</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Rust</td>
-                        <td>Montée en popularité pour sa sécurité et performance, utilisé dans les systèmes à faible latence</td>
-                        <td>Systèmes critiques, blockchain</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Php</td>
-                        <td>Langage côté serveur très utilisé pour les applications web</td>
-                        <td>Développement web backend</td>
-                    </tr>
+            
+                <?php endforeach; ?>  
+                
                 </tbody>
             </table>
         </div>
