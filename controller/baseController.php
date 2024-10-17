@@ -2,18 +2,27 @@
        require_once './model/userModel.php';
         
        $users = getUsers($conn);
-       
-     
+       $date = new DateTime();
+      
    
        class User{
-               public $title = "Classement des langages 2024";
                
-   
-           
-           }
+            public $_title = "Classement 2024 des langages de programmation ";
+            static $_tabletitle = "Classement 2024";
+          
+            
+          
+        
+        }
+       
+     
+      
+        
    
       
    
        # instance
       
        $newUser = new User();
+      
+      

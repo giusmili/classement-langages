@@ -17,7 +17,7 @@
     <header>
         
         <h1>
-            📈Classement 2024 des langages de programmation
+            📈<?=  $newUser->_title ?>
         </h1>
     </header>
 
@@ -25,7 +25,7 @@
         <div class="table-primary" role="region" aria-labelledby="compilation">
             <table>
               
-                <caption>🤴Classement 2024</caption>
+                <caption>🤴 <?= User::$_tabletitle ?></caption>
                 <thead>
                     <th>Rang</th>
                     <th>Langage</th>
@@ -61,7 +61,7 @@
     </main>
     <footer>
         <p>
-            &copy; - MIT - 2024<br>
+            &copy; - MIT - <?= $date->format('Y') ?><br>
             <img src="../asset/militello-all-rights-reserved-for-educational-purposes-only.svg" alt="Militello Giuseppe">
         </p>
     </footer>

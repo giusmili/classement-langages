@@ -9,3 +9,4 @@
         
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
+   
