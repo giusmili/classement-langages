@@ -11,7 +11,6 @@
             static $_tabletitle = "Classement 2024";
           
             
-          
     }
        
      
