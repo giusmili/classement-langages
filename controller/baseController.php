@@ -11,7 +11,10 @@
             static $_tabletitle = "Classement 2024";
           
             
-    }
+        }
+ # instance
+      
+ $newUser = new User();
        
      
       
@@ -19,8 +22,6 @@
    
       
    
-       # instance
       
-       $newUser = new User();
       
       
